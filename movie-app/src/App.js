@@ -1,11 +1,5 @@
 import './styles/main.css';
 import requests from './requests';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Redirect,
-// } from "react-router-dom";
 
 // Page component //
 import Header from './components/Header';
@@ -20,8 +14,9 @@ function App() {
       <Row 
         title="Top 10 Today" 
         fetchUrl={requests.popularMovies}
-        isLargeRow
+        // isLargeRow
       />
+      <Row title="Upcoming" fetchUrl={requests.upcomingMovies} />
       <Row title="Netflix Originals" fetchUrl={requests.netflixOriginals}/>
       <Row title="Top Rated" fetchUrl={requests.topRated}/>
       <Row title="Action Movies" fetchUrl={requests.actionMovies}/>

@@ -39,6 +39,7 @@ function Banner() {
         >
             <div className="banner__contents">
             <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
+        
         <h2 className="banner__description">{truncate(movie.overview, 150)}</h2>
             <div className="banner__btns">
                 <button className="banner__btn"><img className="banner__icon" src={playIcon} alt="play-icon"/>Play</button>

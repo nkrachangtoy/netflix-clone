@@ -8,7 +8,10 @@ const requests = {
     actionMovies: `/discover/tv?api_key=${API_KEY}&with_genres=28`,
     comedyMovies: `/discover/tv?api_key=${API_KEY}&with_genres=35`,
     romanceMovies: `/discover/tv?api_key=${API_KEY}&with_genres=10749`,
-    documentaries: `/discover/tv?api_key=${API_KEY}&with_genres=99`
+    documentaries: `/discover/tv?api_key=${API_KEY}&with_genres=99`,
+    upcomingMovies: `/movie/upcoming?api_key=${API_KEY}&language=en-US`,
+
 }
 
 export default requests;
+
