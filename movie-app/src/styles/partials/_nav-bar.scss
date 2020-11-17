@@ -7,9 +7,15 @@
   height: 40px;
   display: flex;
   justify-content: space-between;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
   &__main-nav {
     display: flex;
     justify-content: space-between;
+  }
+  &__black {
+    background-color: #111;
+    height: 80px;
   }
   &__logo {
     width: 120px;

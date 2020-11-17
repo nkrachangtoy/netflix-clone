@@ -157,6 +157,10 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .nav__main-nav {
@@ -166,6 +170,11 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.nav__black {
+  background-color: #111;
+  height: 80px;
 }
 
 .nav__logo {

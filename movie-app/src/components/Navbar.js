@@ -8,16 +8,17 @@ function Navbar() {
 
     useEffect(()=>{
         window.addEventListener("scroll", ()=>{
-            if (window.scrollY > 100 ) {
+            if (window.scrollY > 50 ) {
                 handleShow(true);
             } else handleShow(false);
     });
     return () => {
         window.removeEventListener("scroll")
-    };
+        };
     }, []);
+
     return (
-        <div className="nav">
+        <div className={`nav ${show && "nav__black"}`}>
             <div className="nav__main-nav">
             <img className="nav__logo" src={netflixLogo} alt="Logo"/>
             <ul className="nav__list">
