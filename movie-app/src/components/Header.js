@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 import Navbar from "./Navbar";
-import Jumbotron from "./Jumbotron";
+import Banner from "./Banner";
 
 class header extends Component {
     render() {
         return (
             <div>
                 <Navbar />
-                <Jumbotron />
+                <Banner />
             </div>
         );
     }
