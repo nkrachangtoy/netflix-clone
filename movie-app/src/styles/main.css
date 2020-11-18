@@ -79,6 +79,7 @@ li {
 }
 
 .overlay__title {
+  margin: 0;
   font-size: 16px;
   font-weight: 200;
   opacity: 1;
@@ -87,6 +88,7 @@ li {
 }
 
 .overlay__rating {
+  margin: 0;
   font-size: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
@@ -94,10 +96,47 @@ li {
 }
 
 .overlay__release-date {
+  margin: 0;
   font-size: 8px;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
+}
+
+.overlay__link {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  opacity: 1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0.5rem;
+}
+
+.overlay__link:hover {
+  background-color: #cccccc;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.overlay__icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
 }
 
 .banner {

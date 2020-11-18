@@ -4,6 +4,8 @@ import requests from "../requests";
 import playIcon from "../assets/icons/svg/play-solid.svg";
 import infoIcon from "../assets/icons/svg/info-circle-solid.svg"
 
+const movieInfo_url = "https://www.themoviedb.org/movie/";
+
 function Banner() {
     const [movie, setMovie] = useState([]);
 
@@ -13,6 +15,7 @@ function Banner() {
             // console.log(request.data.results);
             setMovie(
                 request.data.results[
+                    // randomize movie picture
                     Math.floor(Math.random() * request.data.results.length)
                 ]
             );
@@ -39,11 +42,12 @@ function Banner() {
         >
             <div className="banner__contents">
             <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
+            <h3>Release Date: {movie.release_date}</h3>
         
         <h2 className="banner__description">{truncate(movie.overview, 150)}</h2>
             <div className="banner__btns">
                 <button className="banner__btn"><img className="banner__icon" src={playIcon} alt="play-icon"/>Play</button>
-                <button className="banner__btn"><img className="banner__icon" src={infoIcon} alt="info-icon"/>More Info</button>
+                <a className="banner__btn" target={"_blank"} href={`${movieInfo_url}${movie.id}`}><img className="banner__icon" src={infoIcon} alt="info-icon"/>More Info</a>
             </div>
             </div>
             <div className="banner--fadebottom" />

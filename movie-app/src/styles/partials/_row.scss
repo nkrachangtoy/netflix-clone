@@ -40,19 +40,47 @@
   padding: 20px;
   transition: opacity 0.125s ease;
   &__title {
+    margin: 0;
     font-size: 16px;
     font-weight: 200;
     opacity: 1;
     transition: opacity 0.25s ease;
   }
   &__rating {
+    margin: 0;
     font-size: 12px;
     opacity: 1;
     transition: opacity 0.25s ease 0.125s;
   }
   &__release-date {
+    margin: 0;
     font-size: 8px;
     opacity: 1;
     transition: opacity 0.25s ease 0.125s;
+  }
+  &__link {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    opacity: 1;
+    appearance: none;
+    padding: 0.5rem;
+    &:hover {
+      background-color: darken($color: white, $amount: 20);
+      transition: all 0.2s;
+    }
+  }
+  &__icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.5rem;
   }
 }

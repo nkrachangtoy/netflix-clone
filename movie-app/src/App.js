@@ -17,7 +17,7 @@ function App() {
         // isLargeRow
       />
       <Row title="Upcoming" fetchUrl={requests.upcomingMovies} />
-      <Row title="Netflix Originals" fetchUrl={requests.netflixOriginals}/>
+      <Row title="Netflix Originals" fetchUrl={requests.netflixOriginals} />
       <Row title="Top Rated" fetchUrl={requests.topRated}/>
       <Row title="Action Movies" fetchUrl={requests.actionMovies}/>
       <Row title="Comedy Movies" fetchUrl={requests.comedyMovies}/>
